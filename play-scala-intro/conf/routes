@@ -4,8 +4,11 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
+GET     /hello                      controllers.HelloController.hello(n: String)
 
-GET     /hello                           controllers.HelloController.hello(n: String)
+
+# slick
+GET     /slick                      controllers.slick.PersonController.index
 
 
 # An example controller showing how to use dependency injection
